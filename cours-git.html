@@ -43,7 +43,36 @@
     <div class="cmd">git log</div>
     corrigier les modification sur un fichier pas encore add!
     <div class="cmd">git checkout 'nom du fichier'</div>
-    <div class="cmd"></div>
+    supprime un add :
+    <div class="cmd">git reset 'nom du fichier'</div>
+    supprimer tous les dérniers add sur tous les fichiers
+    <div class="cmd">git reset .</div>
+    Supprimer le dernier commit:
+    <div class="cmd">git reset HEAD^</div>
+    Supprimer le deux dernier commit:
+    <div class="cmd">git reset HEAD^^</div>
+<h2>La notion de branche</h2>
+<p>Une branche est une copie du projet elle permet de développer en parallé
+    de nouvelles fonctionalités lorsqu'on considére les nouvautés opérationnelles, on
+    peut les rappatrier sur la version principale (master)
+</p>
+Commande pour voir les branches:
+<div class="cmd">git branch</div>
+créer une nouvelle branche:
+<div class="cmd">git branch 'nom de la nouvelle branche'</div>
+Se placer sur une branche:
+<div class="cmd">git checkout 'nom du fichier'</div>
+Voir les différences entre deux branches:
+<div class="cmd">git diff 'nom de la branche'..master</div>
+Apporter les modif effectués sur une branche dans master (il faut etre sur master)
+<div class="cmd">git checkout master</div>
+<div class="cmd">git merge 'nom de la branche'</div>
+Apporter les modif effectués sur une branche dans master (il faut etre sur master)
+<div class="cmd">git checkout master</div>
+<div class="cmd">git fetch 'nom de la branche'</div>
+<div class="warning"> Le fetch va literalement remplacer master par la branche.
+    il s'agit donc d'une grosse modification dans le projet (ex: version 2)
+</div>
 
 
 
